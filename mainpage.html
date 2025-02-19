@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainpage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Random Dog Picture</title>
+</head>
+
+<body> 
+    <div class="container">
+        <div class="mainwrapper">
+            <h2 class="header">Basic API Usage</h2>
+            <br>
+            <p class="label">Click buttons to generate image or quote.</p>
+            <img style="width: 2.7in; height: 2.7in;" id="image-container"><span class="image_label">Image will appear here</span>
+            <div class="quote_container">
+                <p id="myquote">Quote will appear here.</p>
+            </div>
+            <div class="buttons">
+                <button type="button" id="cat_img" class="images">Random Cat</button>
+                <button type="button" id="dog_img" class="images">Random Dog</button>
+                <button type="button" id="quote" class="quote">Get Quote</button>
+            </div>
+            <div class="clear-btn">
+                <button type="button" class="remove_img" id="remove_img">Remove image<i class='bx bxs-trash'></i></button>
+                <button type="button" class="remove_quote" id="remove_quote">Remove quote<i class='bx bxs-trash'></i></button>
+            </div>
+            <div class="name">
+                <p>Domasig, Anthony O.</p>
+                <p>BSIT-2B</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="fetching.js"></script>
+</body>
+</html>
