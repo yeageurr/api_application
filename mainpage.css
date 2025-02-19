@@ -139,3 +139,7 @@ body {
 .quote_container {
   word-wrap: break-word;
 }
+
+@media (max-width: 768px) {
+  
+}
