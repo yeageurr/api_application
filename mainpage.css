@@ -19,7 +19,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #102542;
+  background-color: #0a1d39;
 }
 
 .mainwrapper {
@@ -54,6 +54,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 450;
+  text-align: center;
 }
 
 #image-container {
@@ -99,7 +100,7 @@ body {
 .quote_container {
   margin: 10px 0 0 0;
   text-align: center;
-  text-wrap: wrap;
+  word-wrap: break-word;
 }
 
 .clear-btn {
@@ -139,10 +140,6 @@ body {
   bottom: -45px;
   gap: 175px;
   color: #fff;
-}
-
-.quote_container {
-  word-wrap: break-word;
 }
 
 @media (max-width: 768px) {
