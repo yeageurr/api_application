@@ -101,6 +101,9 @@ body {
   margin: 10px 0 0 0;
   text-align: center;
   word-wrap: break-word;
+  overflow-y: auto;
+  max-width: 400px;
+  max-height: 75px;
 }
 
 .clear-btn {
