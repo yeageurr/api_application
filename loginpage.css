@@ -4,13 +4,15 @@
 }
 
 body {
+  padding: 0;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  width: 100%;
   box-sizing: border-box;
-  background: #102542 url('sunset-valley.jpeg') center no-repeat fixed;
-  background-size: 100%;
+  background: url('sunset-valley.jpeg') center/cover no-repeat fixed;
 }
 
 .container {
@@ -31,10 +33,9 @@ body {
 }
 
 #formwrapper {
-  height: fit-content;
+  height: 500px;
   position: relative;
   display: flex;
-  transform: translateX(0);
   transition: transform .3s ease-in-out;
 }
 
@@ -51,7 +52,7 @@ form {
   align-items: center;
   justify-content: center;
   width: 400px;
-  height: fit-content;
+  height: 500px;
 }
 
 .login h1 {
@@ -183,12 +184,23 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: fit-content;
   width: 400px;
 }
 
 .signup h1 {
   transform: translateY(25px);
+}
+
+.terms {
+  margin-top: 5px;
+  display: flex;
+  transform: translateY(5px);
+  font-size: 14px;
+}
+
+.terms input[type='checkbox'] {
+  transform: scale(.9) translateY(-1.5px);
+  accent-color: #102542;
 }
 
 .signup button {
@@ -207,18 +219,6 @@ form {
 .signup button:hover {
   background-color: #061427;
   color: #FFFFFF;
-}
-
-.terms {
-  margin-top: 5px;
-  display: flex;
-  transform: translateY(5px);
-  font-size: 14px;
-}
-
-.terms input[type='checkbox'] {
-  transform: scale(.9) translateY(-1.5px);
-  accent-color: #102542;
 }
 
 .signup p {

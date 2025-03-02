@@ -22,7 +22,9 @@ function validate() {
     alert('Incorrect Username or Password');
     return false;
   } 
-  return true;
+  else {
+    window.location.href = 'index.html';
+  }
 };
 
 function validate_info() {

@@ -13,7 +13,7 @@
 <body>
   <div class="container">
     <div id="formwrapper">
-      <form action="" class="login" id="login" method="POST" onsubmit="return validate()">
+      <form action="" class="login" id="login" method="POST" onsubmit="return validate( )">
         <h1>Sign in</h1>
         <div class="input_fields">
           <div class="input">
@@ -34,13 +34,18 @@
           </div>
           <a href="#">Forgot password</a>
         </div>
-        <button type="submit" class="login-btn" id="login-btn">Sign in</button>
+        <button class="login-btn" id="login-btn" onclick="validate()">Sign in</button>
         <p>Haven't signed up yet? <a id="show_register">Click here</a></p>
       </form>
 
-      <form action="signup.php" class="signup" id="signup" method="POST" onsubmit="return validate_info()">
+      <form action="" class="signup" id="signup" method="" onsubmit="return validate_info()">
         <h1>Sign Up</h1>
         <div class="input_fields">
+          <div class="input">
+            <input type="text" name="email" id="signup_email" autocomplete="off" required>
+            <label for="email" class="form_label">Enter your email</label>
+            <i class='bx bxs-envelope'></i>
+          </div>  
           <div class="input">
             <input type="text" name="new_username" id="signup_username" autocomplete="off" required>
             <label for="signup_username" class="form_label">Username</label>
