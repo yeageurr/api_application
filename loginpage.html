@@ -13,7 +13,7 @@
 <body>
   <div class="container">
     <div id="formwrapper">
-      <form action="" class="login" id="login" method="POST" onsubmit="return validate()">
+      <form class="login" id="login">
         <h1>Sign in</h1>
         <div class="input_fields">
           <div class="input">
@@ -34,11 +34,11 @@
           </div>
           <a href="#">Forgot password</a>
         </div>
-        <button class="login-btn" id="login-btn" onclick="validate()">Sign in</button>
+        <button type="button" class="login-btn" id="login-btn" onclick="validate()">Sign in</button>
         <p>Haven't signed up yet? <a id="show_register">Click here</a></p>
       </form>
 
-      <form action="" class="signup" id="signup" method="" onsubmit="return validate_info()">
+      <form class="signup" id="signup">
         <h1>Sign Up</h1>
         <div class="input_fields">
           <div class="input">
@@ -66,7 +66,7 @@
         <div class="terms">
           <input type="checkbox" name="terms" id="#terms" class="rememberme" required>I agree to the terms and conditions
         </div>
-        <button type="submit" class="login-btn">Sign up</button>
+        <button type="button" class="login-btn" onclick="validate_info()">Sign up</button>
         
         <p>Already have an account? <a id="show_login">Click here to login</a></p>
       </form>
